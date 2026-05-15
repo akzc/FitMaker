@@ -1,0 +1,44 @@
+.cta {
+  margin-top: 28px;
+  margin-bottom: 80px;
+}
+.cta-bloc {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 36px;
+}
+
+.cta-left {
+  display: grid;
+  text-align: start;
+  align-items: start;
+  gap: 36px;
+  padding-block: 141px;
+  margin-left: 98px;
+  color: white;
+}
+
+.cta-left p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.cta-titel {
+  align-items: center;
+  text-align: center;
+}
+
+.cta-btns {
+  display: flex;
+  gap: 24px;
+}
+
+.cta-rights {
+  padding-right: 98px;
+}
+.cta-rights img {
+  width: 604px;
+  height: 662px;
+}

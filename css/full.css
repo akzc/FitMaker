@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Vazirmatn:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  background-color: #1d1d1d;
+  color: white;
+}
+
+.btn-orange {
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 200;
+  color: #cd4e17;
+  background-color: transparent;
+  border: 1px solid #cd4e17;
+  padding: 7px 16px;
+  border-radius: 12px;
+}
+
+.btn-red {
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 200;
+  color: #ffff;
+  background-color: #d90a14;
+  border: 1px solid #d90a14;
+  padding: 7px 16px;
+  border-radius: 12px;
+}

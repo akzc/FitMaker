@@ -1,0 +1,74 @@
+.header-bloc {
+  margin-top: 60px;
+  margin-bottom: 28px;
+  padding-inline: 98px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header-seacrh {
+  display: flex;
+  background-color: #262626;
+  border: none;
+  border-radius: 12px;
+  padding: 6.5px 8px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-nav div {
+  width: 170px;
+}
+
+.header-nav div a {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.header-login-btn {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-a-1 {
+  position: relative;
+}
+
+.nav-a {
+  position: relative;
+}
+
+.nav-a::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-image: url("/img/img_header/next_header.svg");
+  position: absolute;
+  right: -20px;
+  top: 6.5px;
+}
+
+.nav-a-1::before {
+  content: "";
+  height: 3px;
+  width: 100px;
+  background: #d90a14;
+  background: linear-gradient(
+    90deg,
+    rgba(217, 10, 20, 1) 0%,
+    rgba(205, 78, 23, 1) 100%
+  );
+  position: absolute;
+  bottom: -7px;
+  right: -26px;
+  border-radius: 10px;
+}
