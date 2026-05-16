@@ -10,7 +10,7 @@ body {
   color: white;
 }
 
-.sign_up {
+.login {
   display: grid;
   gap: 10px;
   align-items: center;
@@ -19,7 +19,7 @@ body {
   margin: 100px auto;
 }
 
-.sign_up-bloc {
+.login-bloc {
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -32,7 +32,7 @@ body {
   margin: 10px auto;
 }
 
-.sign_up-bloc-bloc {
+.login-bloc-bloc {
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -42,7 +42,7 @@ body {
   gap: 10px;
 }
 
-.sign_up-bloc h1 {
+.login-bloc h1 {
   padding-bottom: 10px;
   font-size: 40px;
 }
