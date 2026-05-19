@@ -22,22 +22,24 @@ btnInput.addEventListener("click", () => {
   if (isSuccess) {
     nameInput.value = "";
     passwordInput.value = "";
+    window.location.href = "/login.html";
   }
 });
 
 function register(name, password) {
-  let user = JSON.parse(localStorage.getItem("user") || "[]");
+  let users = JSON.parse(localStorage.getItem("users") || "[]");
 
-  const userExists = user.some((user) => user.name === name);
+  const userExists = users.some((user) => user.name === name);
 
   if (userExists) {
     console.log("пользователь уже есть ");
-    return;
+    return false;
   }
 
-  user.push({ name: name, password: password });
+  users.push({ name, password });
 
-  localStorage.setItem("user", JSON.stringify(user));
+  localStorage.setItem("users", JSON.stringify(users));
 
   console.log("все супер");
+  return true;
 }
