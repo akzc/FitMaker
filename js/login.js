@@ -73,4 +73,26 @@ if (btnLogout) {
   });
 }
 
+if (btnInput && nameInput && passwordInput) {
+  passwordInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      const name = nameInput.value.trim();
+      const password = passwordInput.value.trim();
+
+      if (name === "" || password === "") {
+        alert("Заполните все поля");
+        return;
+      }
+
+      const isSuccess = login(name, password);
+
+      if (isSuccess) {
+        nameInput.value = "";
+        passwordInput.value = "";
+        window.location.href = "index.html";
+      }
+    }
+  });
+}
+
 checkAuth();

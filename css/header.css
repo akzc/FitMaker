@@ -72,3 +72,8 @@
   right: -26px;
   border-radius: 10px;
 }
+
+.user-block button {
+  font-size: 12px;
+  padding: 5px;
+}

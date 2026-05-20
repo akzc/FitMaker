@@ -27,6 +27,7 @@ body {
   border: 1px solid #cd4e17;
   padding: 7px 16px;
   border-radius: 12px;
+  cursor: pointer;
 }
 
 .btn-red {
@@ -39,6 +40,7 @@ body {
   border: 1px solid #d90a14;
   padding: 7px 16px;
   border-radius: 12px;
+  cursor: pointer;
 }
 
 .user-block {
