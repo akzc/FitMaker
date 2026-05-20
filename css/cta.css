@@ -42,6 +42,7 @@
   width: 604px;
   height: 662px;
 }
+
 .cta-mobail {
   display: none;
 }
@@ -88,7 +89,74 @@
   }
 
   .cta-mobail p {
-    filter: drop-shadow(7px 8px 8px #000000);
+    filter: drop-shadow(7px 8px 8px #00000071);
+  }
+
+  .cta-mobail::before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    right: 0px;
+    background-color: #77060b;
+    box-shadow: 0px 0px 1000px 100px #77060b;
+    filter: blur(20px);
+  }
+
+  .cta-btns {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-img {
+    display: grid;
+    justify-content: none;
+    align-items: center;
+    text-align: center;
+  }
+  .cta-img img {
+    max-width: 768px;
+    width: 100%;
+  }
+  .cta-left {
+    display: none;
+  }
+  .cta-rights {
+    display: none;
+  }
+  .cta {
+    margin-top: 0px;
+    margin-bottom: 36px;
+    padding-inline: 24px;
+  }
+
+  .cta-mobail {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 24px;
+    text-align: start;
+    display: grid;
+    gap: 20px;
+  }
+
+  .cta-mobail::after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    left: 0px;
+    background-color: #712b0d;
+    box-shadow: 0px 0px 1000px 100px #712b0d; /* Большой радиус размытия и растяжения */
+    filter: blur(20px); /* Полностью размывает жесткие края */
+  }
+
+  .cta-mobail p {
+    filter: drop-shadow(7px 8px 8px #00000071);
   }
 
   .cta-mobail::before {

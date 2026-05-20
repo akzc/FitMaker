@@ -219,3 +219,133 @@
     transition: 0.5s;
   }
 }
+
+@media (max-width: 768px) {
+  .header-bloc {
+    display: flex;
+    gap: 0px;
+    padding-top: 24px;
+    padding-bottom: 38px;
+    padding-inline: 24px;
+  }
+  .btn-header {
+    display: none;
+  }
+
+  .header-login-btn {
+    display: none;
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-seacrh {
+    display: none;
+  }
+  .header-seacrh-2 {
+    flex: 0.9;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 9.5px;
+    gap: 3px;
+    border-radius: 12px;
+    color: #ffff;
+    background-color: #262626;
+    display: flex;
+  }
+  .header-seacrh-2 input {
+    outline: none;
+    border-radius: 12px;
+    border: none;
+    background-color: #262626;
+    color: #ffff;
+  }
+  .header-nav-1 {
+    display: none;
+  }
+  .burger {
+    position: relative;
+    margin: 4.5px;
+    display: grid;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+
+  .burger::after,
+  .burger::before,
+  .burger span {
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #ffff;
+    transition: 0.5s;
+  }
+
+  .burger span {
+    top: 11px;
+  }
+
+  .burger::before {
+    content: "";
+    top: 0;
+  }
+  .burger::after {
+    content: "";
+    bottom: 0;
+  }
+
+  .burger-active span {
+    transition: 0.5s;
+    transform: rotate(45deg);
+
+    top: 12px;
+  }
+
+  .burger-active::before {
+    transition: 0.5s;
+
+    transform: rotate(45deg);
+
+    top: 12px;
+  }
+  .burger-active::after {
+    transition: 0.5s;
+
+    transform: rotate(-45deg);
+
+    bottom: 10px;
+  }
+  .header-nav-1 {
+    position: fixed;
+    left: -200px;
+    top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: grid;
+    z-index: 1;
+    background-color: #202020;
+    transition: 0.5s;
+  }
+  .active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 1;
+    background-color: #202020;
+    transition: 0.5s;
+  }
+}
