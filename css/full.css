@@ -46,3 +46,6 @@ body {
 .user-block {
   display: none;
 }
+
+@media (max-width: 430px) {
+}
