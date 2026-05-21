@@ -22,7 +22,7 @@ btnInput.addEventListener("click", () => {
   if (isSuccess) {
     nameInput.value = "";
     passwordInput.value = "";
-    window.location.href = "/login.html";
+    window.location.href = "login.html";
   }
 });
 
