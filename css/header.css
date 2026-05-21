@@ -237,8 +237,8 @@
   }
   .header-login-btn {
     display: none;
+    justify-content: center;
   }
-
   #btnlogout {
     font-size: 12px;
   }
