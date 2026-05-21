@@ -150,7 +150,6 @@
     width: 100%;
     height: 3px;
     background-color: #ffff;
-    transition: 0.5s;
   }
 
   .burger span {
@@ -167,22 +166,17 @@
   }
 
   .burger-active span {
-    transition: 0.5s;
     transform: rotate(45deg);
 
     top: 12px;
   }
 
   .burger-active::before {
-    transition: 0.5s;
-
     transform: rotate(45deg);
 
     top: 12px;
   }
   .burger-active::after {
-    transition: 0.5s;
-
     transform: rotate(-45deg);
 
     bottom: 10px;
@@ -200,7 +194,7 @@
     display: grid;
     z-index: 1;
     background-color: #202020;
-    transition: 0.5s;
+    transition: 0.7s;
   }
   .active {
     position: fixed;
@@ -215,7 +209,7 @@
     border-bottom-right-radius: 10px;
     z-index: 1;
     background-color: #202020;
-    transition: 0.5s;
+    transition: 0.7s;
   }
   #bnts-header-1,
   #bnts-header-2,
@@ -299,7 +293,6 @@
     width: 100%;
     height: 3px;
     background-color: #ffff;
-    transition: 0.5s;
   }
 
   .burger span {
@@ -316,22 +309,17 @@
   }
 
   .burger-active span {
-    transition: 0.5s;
     transform: rotate(45deg);
 
     top: 12px;
   }
 
   .burger-active::before {
-    transition: 0.5s;
-
     transform: rotate(45deg);
 
     top: 12px;
   }
   .burger-active::after {
-    transition: 0.5s;
-
     transform: rotate(-45deg);
 
     bottom: 10px;
