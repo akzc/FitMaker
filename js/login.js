@@ -5,8 +5,12 @@ const btnInput = document.querySelector(".btn-input");
 // Элементы шапки (есть только на главной странице)
 const userBloc = document.getElementById("userBloc");
 const loginBtn = document.getElementById("headerLogin-btn");
+const loginBtn2 = document.getElementById("headerLogin-btn2");
+
 const userName = document.getElementById("userName");
 const btnLogout = document.querySelector(".btn-logout");
+const userBloc2 = document.getElementById("userBloc2");
+const userName2 = document.getElementById("userName2");
 
 function login(name, password) {
   let users = JSON.parse(localStorage.getItem("users") || "[]");
@@ -27,9 +31,15 @@ function login(name, password) {
 }
 
 function showUserProfile(name) {
-  if (loginBtn) loginBtn.style.display = "none";
-  if (userBloc) userBloc.style.display = "block";
-  if (userName) userName.textContent = name;
+  if (window.innerWidth < 769) {
+    if (loginBtn2) loginBtn2.style.display = "none";
+    if (userBloc2) userBloc2.style.display = "grid";
+    if (userName2) userName2.textContent = name;
+  } else {
+    if (loginBtn) loginBtn.style.display = "none";
+    if (userBloc) userBloc.style.display = "block";
+    if (userName) userName.textContent = name;
+  }
 }
 
 function checkAuth() {
@@ -42,8 +52,13 @@ function checkAuth() {
       window.location.href = "index.html";
     }
   } else {
-    if (loginBtn) loginBtn.style.display = "flex";
-    if (userBloc) userBloc.style.display = "none";
+    if (window.innerWidth < 769) {
+      if (loginBtn2) loginBtn2.style.display = "flex";
+      if (userBloc2) userBloc2.style.display = "none";
+    } else {
+      if (loginBtn) loginBtn.style.display = "flex";
+      if (userBloc) userBloc.style.display = "none";
+    }
   }
 }
 

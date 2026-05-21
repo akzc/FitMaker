@@ -217,10 +217,12 @@
     background-color: #202020;
     transition: 0.5s;
   }
-
   #bnts-header-1,
   #bnts-header-2,
   #headerLogin-btn {
+    display: none;
+  }
+  #userBloc2 {
     display: none;
   }
   #user-bloc {
@@ -232,6 +234,13 @@
   }
   .btn-header-2 {
     display: none;
+  }
+  .header-login-btn {
+    display: none;
+  }
+
+  #btnlogout {
+    font-size: 12px;
   }
 }
 
@@ -362,6 +371,9 @@
   #headerLogin-btn {
     display: none;
   }
+  #userBloc2 {
+    display: none;
+  }
   #user-bloc {
     display: none;
   }
@@ -371,5 +383,12 @@
   }
   .btn-header-2 {
     display: none;
+  }
+  .header-login-btn {
+    display: none;
+    justify-content: center;
+  }
+  #btnlogout {
+    font-size: 12px;
   }
 }
